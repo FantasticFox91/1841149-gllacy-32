@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Григорий Лисица](https://up.htmlacademy.ru/htmlcss/32/user/1841149).
-* Наставник: [Екатерина Комнтаная](https://htmlacademy.ru/profile/id215761).
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
