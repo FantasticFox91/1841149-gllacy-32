@@ -38,9 +38,11 @@
           </button>
 <!-- Search pop-up -->
           <div class="popup-search visually-hidden">
-            <label for="search">
-              <input type="search" id="search" name="header-search" placeholder="Поиск по сайту">
-            </label>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label for="search">
+                <input type="search" id="search" name="header-search" placeholder="Поиск по сайту">
+              </label>
+            </form>
           </div>
         </li>
         <li class="list-item">
@@ -169,14 +171,14 @@
         <ul class="gifts-list">
           <li class="gift-item">
             <h3 class="gift-heading">Малинка даром!</h3>
-            <p class="gift-info">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового варенья бесплатно.</p>
-            <button type="button" class="gift-btn">Хочу подарок</button>
+            <p class="gift-info">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="#" class="link-btn">Хочу подарок</a>
             <img src="#" alt="Малина в рожке" class="gift-image">
           </li>
           <li class="gift-item">
             <h3 class="gift-heading">Маршмеллоу даром!</h3>
             <p class="gift-info">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <button type="button" class="gift-btn">Хочу подарок</button>
+            <a href="#" class="link-btn">Хочу подарок</a>
             <img src="#" alt="Маршмеллоу в рожке" class="gift-image">
           </li>
         </ul>
@@ -229,7 +231,7 @@
           <li class="ablut-list-item">
             <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
-          <li class="ablut-list-item">
+          <li class="about-list-item">
             <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
@@ -238,7 +240,7 @@
       <article class="news">
         <h1 class="visually-hidden">Новости</h1>
           <p>Новое в нашем блоге</p>
-          <a>10 способов сервировки фруктовых щербетов</a>
+          <a href="#">10 способов сервировки фруктовых щербетов</a>
       </article>
 
       <section class="subscribe">
@@ -249,9 +251,9 @@
           </p>
           <p>
             <label for="email">
-              <input type="email" placeholder="email@example.com" name='email' id="email" class="subscribe-input" required>
+              <input type="email" placeholder="email@example.com" name="email" id="email" class="subscribe-input" required>
             </label>
-            <button type='submit' class="subscribe-btn">Отправить</button>
+            <button type="submit" class="subscribe-btn">Отправить</button>
           </p>
         </form>
       </section>
@@ -262,24 +264,27 @@
 <!-- Delivery form -->
         <form action="https://echo.htmlacademy.ru">
           <p class="form-heading">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <p>Дата</p>
           <p>
-            <label for="date">
-              <input type="text" id="date" placeholder="01.04.2020" name="delivery-date" required>
-            </label>
+            <label for="date">Дата</label>
+            <button class="info" type="button">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+            </button>
+            <input type="text" id="date" placeholder="01.04.2020" name="delivery-date" required>
           </p>
-          <p>Телефон</p>
+
           <p>
-            <label for="phone-number">
+            <label for="phone-number">Телефон
               <input type="tel" id="phone-number" placeholder="+7 800 999-00-00" name="phone-number" required>
             </label>
             </p>
-          <p>Адресс</p>
+
           <p>
-            <label for="adress">
+            <label for="adress">Адресс</label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
               <input type="text" id="adress" placeholder="ул. Большая Конюшенная, 19/8" name="adress" required>
-            </label>
-          </p>
+         </p>
           <p>
             <button type="submit">Отправить</button>
           </p>
@@ -291,10 +296,8 @@
         <dl class="adress-block">
           <dt>Адрес главного офиса и офлайн-магазина:</dt>
           <dd>
-            наб. Реки Карповки,
-            <p>
-              5 лит П, Санкт-Петербург
-            </p>
+            наб. Реки Карповки,<br>
+            5 лит П, Санкт-Петербург
           </dd>
 
           <dt>Для заказов по телефону:</dt>
@@ -361,7 +364,6 @@
             <p>Сделано в <a href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
           </li>
         </ul>
-        <p>Сделано в <a href="#">.html academy</a> &#169; 2021</p>
       </footer>
 <!-- Modal pop-up for feedback -->
        <div class="modal-feedback-form">
@@ -385,7 +387,7 @@
           </p>
           <p>
             <label for="form-text">
-              <input type="text" id="form-text" placeholder="В свободной форме" name="feedback-text" required>
+              <textarea id="form-text" placeholder="В свободной форме" name="feedback-text" required>В свободной форме</textarea>
             </label>
           </p>
           <button type="submit">Отправить</button>
