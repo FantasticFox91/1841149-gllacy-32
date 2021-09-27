@@ -38,12 +38,14 @@
           </button>
 <!-- Search pop-up -->
           <div class="popup-search visually-hidden">
-            <label for="search">
-              <input type="search" id="search" name="header-search" placeholder="Поиск по сайту">
-            </label>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <label for="search">
+                <input type="search" id="search" name="header-search" placeholder="Поиск по сайту">
+              </label>
+            </form>
           </div>
-        </li>
-        <li class="list-item">
+          </li>
+          <li class="list-item">
           <button type="button" class="user-list-btn">
             <span class="visually-hidden">
               Вход в ЛК
@@ -91,17 +93,21 @@
                 <h3 class="bucket-item-heading">Малинка</h3>
                 <p>1 кг х 310 &#8381;</p>
                 <strong>310 &#8381;</strong>
-                <span class="visually-hidden">Закрыть</span>
+                <button type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
               </li>
               <li class="bucket-item">
                 <img src="#" alt="Бабл-гам" class="bucket-image">
                 <h3 class="bucket-item-heading">Бабл-гам</h3>
                 <p>1.5 кг х 320 &#8381;</p>
                 <strong>480 &#8381;</strong>
-                <span class="visually-hidden">Закрыть</span>
+                <button type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
               </li>
           </ul>
-          <button type="button">Оформить заказ</button>
+          <a href="#">Оформить заказ</a>
           <p>Итого:<span class="total-price">790</span>&#8381;</p>
         </div>
         </li>
@@ -109,10 +115,9 @@
     </header>
 <!-- Main -->
     <main class="main-catalog">
-      <h1 class="visually-hidden">Каталог</h1>
 <!-- Breadcrumbs navigation -->
-      <header class="catalog-header">
-        <h1 class="visually-hidden">Навигация по сайту</h1>
+      <header class="inner-site-navigation">
+        <h1 class="visually-hidden">Каталог</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -163,29 +168,25 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="fat 0%">
-                  <span class="control-mark"></span>
-              <span class="control-label">0%</span>
+                  <span class="control-label">0%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="fat less 10%" checked>
-                  <span class="control-mark"></span>
-              <span class="control-label">до 10%</span>
+                  <span class="control-label">до 10%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="fat less 30%">
-                  <span class="control-mark"></span>
-              <span class="control-label">до 30%</span>
+                  <span class="control-label">до 30%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="fat more 30%">
-                  <span class="control-mark"></span>
-              <span class="control-label">выше 30%</span>
+                  <span class="control-label">выше 30%</span>
                 </label>
               </li>
             </ul>
@@ -197,35 +198,30 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
-                  <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="sugar-adds" checked>
-                  <span class="control-mark"></span>
                   <span class="control-label">сахарные присыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="fruits">
-                  <span class="control-mark"></span>
                   <span class="control-label">фрукты</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="sirops">
-                  <span class="control-mark"></span>
                   <span class="control-label">сиропы</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="jams">
-                  <span class="control-mark"></span>
                   <span class="control-label">джемы</span>
                 </label>
               </li>
