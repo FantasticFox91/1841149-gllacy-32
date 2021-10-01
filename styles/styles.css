@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url(/fonts/inter-400.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  url(/fonts/inter-700.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:  url(/fonts/inter-900.woff2) format('woff2');
+}
+
+/* Basic styles and resets */
+
+body{
+  background-color: #FEAFC3;
+  color:#2D3440;
+}
+
+section, article{
+  border-radius:16px;
+}
+/* Promotion block */
+
+.promo{
+  position: relative;
+}
+
+  /* Идея в том что бы подложка в виде круга не двигалась, а двигались только изображения мороженного.  */
+
+.circle-bg{
+  position: absolute;
+  background-color: #FFCBD8;
+  width: 312px;
+  height: 312px;
+  left: 104px;
+  top: 220px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-bg-small{
+  position: absolute;
+  background-color: #FFCBD8;
+  width: 100px;
+  height: 100px;
+  left: 111px;
+  top: 758px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle-bg-small-last{
+  position: absolute;
+  background-color: #FFCBD8;
+  width: 100px;
+  height: 100px;
+  left: 111px;
+  top: 1000px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.promo-slide{
+  opacity:0.4;
+}
+
+.promo-slider-list :first-child{
+  opacity:1;
+}
+
+.slider-pagination-btn{
+  border-radius: 50%;
+  border: none;
+  background-color:#FCFCFC;
+  font-size: 0;
+  width:12px;
+  height: 12px;
+  opacity: 0.3;
+}
+
+.slider-pagination-btn-active{
+  opacity:1;
+}
+
+/* Gifts block */
+
+.gift-item{
+  background-color: #FF7799;
+  color:#2D3440;
+}
+
+/* Popular block */
+
+/* About block */
+
+.about{
+  background:#FCFCFC url(/img/waffles-bg.png) no-repeat;
+  width:1170px;
+  height:480px;
+}
+
+.about-wrapper{
+  background-color: #FCFCFC;
+}
+
+/* News block */
+
+.news{
+  background: #FCFCFC url(/img/news-bg.jpg) no-repeat;
+  width:570px;
+  height:216px;
+}
+
+/* Subscribe block */
+
+.subscribe{
+  background: #FCFCFC url(/img/subscribe-bg.png) no-repeat;
+  width:570px;
+  height:216px;
+}
+
+.subscribe-wrapper{
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+/* Delivery block */
+
+.delivery{
+  background: #FCFCFC url(/img/delivery-bg.jpg) no-repeat;
+  width: 1170px;
+  height: 534px;
+}
+
+.delivery-form{
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+/* Adress block */
+
+.adress{
+  background: #FCFCFC url(/img/adress-bg.jpg) no-repeat;
+  width:1170px;
+  height:492px;
+}
+
+.adress-block{
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+/* Catalog page */
