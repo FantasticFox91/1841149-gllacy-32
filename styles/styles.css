@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src:  url(fonts/inter-400.woff2) format('woff2');
+  src: url(../fonts/inter-400.woff2) format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src:  url(fonts/inter-700.woff2) format('woff2');
+  src: url(../fonts/inter-400.woff2) format("woff2");
 }
 
 @font-face {
@@ -19,148 +19,322 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src:  url(fonts/inter-900.woff2) format('woff2');
+  src: url(../fonts/inter-400.woff2) format("woff2");
 }
 
 /* Basic styles and resets */
 
-body{
-  background-color: #FEAFC3;
-  color:#2D3440;
+body {
+  background-color: rgb(254, 175, 195);
+  color: rgb(45, 52, 64);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
-section, article{
-  border-radius:16px;
+.container-heading {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
 }
+
+p {
+  color: rgb(86, 92, 102);
+}
+
+section,
+article {
+  border-radius: 16px;
+}
+
+.container-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* Header */
+
+.list-item {
+  line-height: 20px;
+}
+
+.item-link {
+  text-decoration: none;
+  color: rgb(45, 52, 64);
+}
+
+.item-tel {
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.user-list-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
 /* Promotion block */
 
-.promo{
-  position: relative;
+.promo-slide-heading {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
 }
 
-  /* Идея в том что бы подложка в виде круга не двигалась, а двигались только изображения мороженного.  */
-
-.circle-bg{
-  position: absolute;
-  background-color: #FFCBD8;
-  width: 312px;
-  height: 312px;
-  left: 104px;
-  top: 220px;
-  border-radius: 50%;
-  z-index: -1;
+.promo-slide-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
 }
 
-.circle-bg-small{
-  position: absolute;
-  background-color: #FFCBD8;
-  width: 100px;
-  height: 100px;
-  left: 111px;
-  top: 758px;
-  border-radius: 50%;
-  z-index: -1;
+.promo-slide {
+  opacity: 0.4;
 }
 
-.circle-bg-small-last{
-  position: absolute;
-  background-color: #FFCBD8;
-  width: 100px;
-  height: 100px;
-  left: 111px;
-  top: 1000px;
-  border-radius: 50%;
-  z-index: -1;
+.promo-slider-list :first-child {
+  opacity: 1;
 }
 
-.promo-slide{
-  opacity:0.4;
-}
-
-.promo-slider-list :first-child{
-  opacity:1;
-}
-
-.slider-pagination-btn{
-  border-radius: 50%;
-  border: none;
-  background-color:#FCFCFC;
-  font-size: 0;
-  width:12px;
+.slider-pagination-btn {
+  width: 12px;
   height: 12px;
+  border: none;
+  font-size: 0;
+  background-color: rgb(252, 252, 252);
+  border-radius: 50%;
   opacity: 0.3;
 }
 
-.slider-pagination-btn-active{
-  opacity:1;
+.slider-pagination-btn-active {
+  opacity: 1;
 }
 
 /* Gifts block */
 
-.gift-item{
-  background-color: #FF7799;
-  color:#2D3440;
+.gift-item {
+  color: rgb(45, 52, 64);
+  background-color: rgb(255, 119, 153);
+}
+
+.gift-heading {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-info {
+  color: inherit;
+}
+
+.link-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(252, 252, 252);
 }
 
 /* Popular block */
 
-/* About block */
-
-.about{
-  background:#FCFCFC url(../img/waffles-bg.png) no-repeat;
-  width:1170px;
-  height:480px;
+.product-card-image {
+  border-radius: 50%;
 }
 
-.about-wrapper{
-  background-color: #FCFCFC;
+.product-card-link {
+  text-decoration: none;
+  color: rgb(45, 52, 64);
+}
+
+.product-card-title,
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* About block */
+
+.about {
+  width: 1170px;
+  height: 480px;
+  background: rgb(252, 252, 252) url(../img/waffles-bg.png) no-repeat;
+}
+
+.about-wrapper {
+  background-color: rgb(252, 252, 252);
 }
 
 /* News block */
 
-.news{
-  background: #FCFCFC url(../img/news-bg.jpg) no-repeat;
-  width:570px;
-  height:216px;
+.news {
+  width: 570px;
+  height: 216px;
+  background: rgb(252, 252, 252) url(../img/news-bg.jpg) no-repeat;
+}
+
+.news-heading {
+  line-height: 20px;
+}
+
+.news-text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgb(45, 52, 64);
+  text-decoration: none;
 }
 
 /* Subscribe block */
 
-.subscribe{
-  background: #FCFCFC url(../img/subscribe-bg.png) no-repeat;
-  width:570px;
-  height:216px;
+.subscribe {
+  width: 570px;
+  height: 216px;
+  background: rgb(252, 252, 252) url(../img/subscribe-bg.png) no-repeat;
 }
 
-.subscribe-wrapper{
-  background-color: #FCFCFC;
+.subscribe-wrapper {
+  background-color: rgb(252, 252, 252);
   border-radius: 8px;
 }
 
 /* Delivery block */
 
-.delivery{
-  background: #FCFCFC url(../img/delivery-bg.jpg) no-repeat;
+.delivery {
   width: 1170px;
   height: 534px;
+  background: rgb(252, 252, 252) url(../img/delivery-bg.jpg) no-repeat;
 }
 
-.delivery-form{
-  background-color: #FCFCFC;
+.delivery-form {
+  background-color: rgb(252, 252, 252);
   border-radius: 8px;
 }
+
+.delivery-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
 
 /* Adress block */
 
-.adress{
-  background: #FCFCFC url(../img/adress-bg.jpg) no-repeat;
-  width:1170px;
-  height:492px;
+.adress {
+  width: 1170px;
+  height: 492px;
+  background: rgb(252, 252, 252) url(../img/adress-bg.jpg) no-repeat;
 }
 
-.adress-block{
-  background-color: #FCFCFC;
+.adress-block {
+  background-color: rgb(252, 252, 252);
   border-radius: 8px;
 }
 
+dd {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.tel-link {
+  text-decoration: none;
+  color: #151617;
+}
+
+.tel-time {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Footer */
+
+.about-manufacture-link-list a {
+  font-size: 14px;
+}
+
+.link-loved {
+  font-weight: 700;
+}
+
+.html-academy-link {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.html-academy-link a {
+  color: rgb(45, 52, 64);
+}
+
 /* Catalog page */
+
+/* Catalog header */
+
+.link-active {
+  padding: 8px 16px;
+  color: rgb(252, 252, 252);
+  background-color: rgb(255, 74, 120);
+  border-radius: 26px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(45, 52, 64);
+}
+
+/* Filter block */
+
+.catalog-filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.control-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-btn {
+  font-family: "Inter", serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/* Pagination block */
+
+.pagination-show-more {
+  font-family: "Inter", serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: rgb(45, 52, 64);
+  text-decoration: none;
+}
