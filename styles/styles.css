@@ -99,8 +99,12 @@ article {
 }
 
 .user-list-btn {
+  padding: 8px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
+  background-color: #fec7d5;
+  border: none;
+  border-radius: 26px;
 }
 
 /* Promotion block */
