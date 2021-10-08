@@ -45,6 +45,13 @@ body {
   font-weight: 400;
   color: rgb(45, 52, 64);
   background-color: rgb(254, 175, 195);
+}
+
+.main-index {
+  flex-grow: 1;
+}
+
+.main-catalog {
   flex-grow: 1;
 }
 
@@ -151,16 +158,10 @@ body {
 .pagination-columns {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 /* Promotion block */
-
-.promo {
-  display: flex;
-  flex-direction: column;
-  width: 1170px;
-  margin: 21px auto 0 auto;
-}
 
 .promo-slider-list {
   display: flex;
@@ -207,15 +208,11 @@ body {
 
 /* Gifts block */
 
-.gifts {
-  display: flex;
-  flex-direction: column;
-}
-
 .gifts-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
   list-style-type: none;
 }
@@ -228,7 +225,7 @@ body {
 
 .main-gift-heading {
   width: 443px;
-  margin: 80px auto 56px auto;
+  margin: 0 auto 56px auto;
   text-align: center;
 }
 
@@ -251,15 +248,9 @@ body {
 
 /* Popular block */
 
-.popular {
-  display: flex;
-  flex-direction: column;
-  width: 1170px;
-}
-
 .main-popular-heading {
   width: 527px;
-  margin: 80px auto 16px auto;
+  margin: 0 auto 110px auto;
   text-align: center;
 }
 
@@ -273,15 +264,24 @@ body {
 }
 
 .product-card {
+  position: relative;
   width: 270px;
+  height: 281px;
   text-align: center;
   background-color: #fcfcfc;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-bottom: 91px;
+}
+
+.product-card-container {
+  position: absolute;
+  top: -50px;
+  width: 100%;
 }
 
 .product-card-image {
   border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .product-card-link {
@@ -303,13 +303,11 @@ body {
 
 .about {
   display: flex;
-  width: 1170px;
-  margin: 80px auto 0 auto;
+  margin-bottom: 80px;
   background: rgb(252, 252, 252) url("../img/waffles-bg.png") no-repeat;
 }
 
 .about-wrapper {
-  width: 1122px;
   margin: 24px;
   background-color: rgb(252, 252, 252);
 }
@@ -327,8 +325,7 @@ body {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  width: 1170px;
-  margin: 80px auto 0 auto;
+  margin-bottom: 80px;
 }
 
 /* News block */
@@ -377,15 +374,13 @@ body {
 
 .delivery {
   display: flex;
-  width: 1170px;
-  margin: 80px auto 0 auto;
+  margin-bottom: 80px;
   background: rgb(252, 252, 252) url("../img/delivery-bg.jpg") no-repeat;
 }
 
 .delivery-desc {
   width: 371px;
   margin-left: 100px;
-  margin-top: 167px;
 }
 
 .main-delivery-heading {
@@ -414,8 +409,7 @@ body {
 
 .adress {
   display: flex;
-  width: 1170px;
-  margin: 80px auto 0 auto;
+  margin-bottom: 48px;
   background: rgb(252, 252, 252) url("../img/adress-bg.jpg") no-repeat;
 }
 
@@ -453,7 +447,6 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  margin-top: 48px;
 }
 
 .link-list {
@@ -526,9 +519,7 @@ body {
 /* Breadcrumbs */
 
 .inner-site-navigation {
-  display: flex;
-  flex-direction: column;
-  width: 470px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs {
@@ -540,6 +531,7 @@ body {
 
 .breadcrumbs-link {
   display: inline;
+  margin-right: 28px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -552,6 +544,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 807px;
+  margin-bottom: 100px;
 }
 
 .catalog-filter-group {
@@ -607,6 +600,15 @@ body {
   border-radius: 20px;
 }
 
+/* Product block */
+
+.catalog-products li:nth-last-child(1),
+.catalog-products li:nth-last-child(2),
+.catalog-products li:nth-last-child(3),
+.catalog-products li:nth-last-child(4) {
+  margin-bottom: 60px;
+}
+
 /* Pagination block */
 
 .catalog-pagination {
@@ -614,7 +616,7 @@ body {
 }
 
 .pagination-show-more {
-  margin: 41px 0 41px 494px;
+  margin: 0 0 41px 494px;
   padding: 12px 32px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -627,7 +629,6 @@ body {
 
 .pagination-link-list {
   display: flex;
-  align-items: center;
   margin: 0;
   margin-left: auto;
 }
