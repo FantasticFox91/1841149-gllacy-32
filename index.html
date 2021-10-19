@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -35,13 +36,11 @@
             <a href="tel:88005558628" class="item-tel">+7 800 555-86-28</a>
           </li>
           <li class="list-item search-pop">
-              <button type="button" class="user-list-btn">
-                <a href="#search">Search
-                  <span class="visually-hidden">
-                    Поиск
-                  </span>
-                </a>
-              </button>
+            <button type="button" class="user-list-btn">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </button>
   <!-- Search pop-up -->
             <div class="popup-search" id="search">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -52,7 +51,7 @@
             </div>
           </li>
           <li class="list-item">
-            <button type="button" class="user-list-btn">
+            <button type="button" class="user-list-btn enter">
               <span>
                 Вход
               </span>
@@ -84,7 +83,7 @@
             </div>
           </li>
           <li class="list-item">
-            <button type="button" class="user-list-btn">
+            <button type="button" class="user-list-btn cart">
               <span>
                 Пусто
               </span>
@@ -106,7 +105,7 @@
   <!-- Promo slider -->
           <ul class="promo-slider-list">
             <li class="promo-slide">
-              <div class="slide-desc active">
+              <div class="slide-desc slider-desc-active">
                 <h3 class="promo-slide-heading">Нежный пломбир с клубничным джемом</h3>
                 <p class="promo-slide-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
                 <a href="#" class="link-btn">Заказать</a>
@@ -115,8 +114,11 @@
                 <img class="promo-slide-image" src="img/ice-cream-1.png" alt="Пломбир с клубничным джемом" width="306" height="507">
                 <div class="circle-bg"></div>
                 <button type="button" class="slider-control control-next">
-                   <span class="visually-hidden">Следующий слайд</span>
-                  </button>
+                  <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" fill="#fcfcfc"/>
+                  </svg>
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
                 <button type="button" class="slider-control control-prev">
                   <span class="visually-hidden">Предыдущий слайд</span>
                 </button>
