@@ -95,6 +95,7 @@ body {
   color: #2d3440;
   background-color: #fcfcfc;
   border-color: #ff2f64;
+  box-shadow: none;
 }
 
 .container-btn-red:focus-visible {
