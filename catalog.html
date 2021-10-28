@@ -44,8 +44,8 @@
   <!-- Search pop-up -->
             <div class="popup-search" id="search">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-                <label for="search">
-                  <input type="search" class="form-input search-input" id="search" name="header-search" placeholder="Поиск по сайту">
+                <label for="popup-search">
+                  <input type="search" class="form-input search-input" id="popup-search" name="header-search" placeholder="Поиск по сайту">
                 </label>
               </form>
             </div>
@@ -91,9 +91,9 @@
               </span>
             </button>
 <!-- Bucket pop-up -->
-          <div class="catalog-bucket">
-            <h2 class="bucket-heading">Корзина</h2>
-            <ul class="bucket-list">
+            <div class="catalog-bucket">
+              <h2 class="bucket-heading">Корзина</h2>
+              <ul class="bucket-list">
                 <li class="bucket-item">
                   <img src="img/rasberry.jpg" alt="Малинка" class="bucket-image" width="46" height="46">
                   <h3 class="bucket-item-heading">Малинка</h3>
@@ -112,10 +112,13 @@
                     <span class="visually-hidden">Закрыть</span>
                   </button>
                 </li>
-            </ul>
-            <a class="container-btn-red link-bucket">Оформить заказ</a>
-            <p class="total-price"><b>Итого: <span>790</span>&#8381;</b></p>
-          </div>
+              </ul>
+                <a class="container-btn-red link-bucket">Оформить заказ</a>
+                <p class="total-price"><b>Итого: <span>790</span>&#8381;</b></p>
+              </div>
+          </li>
+        </ul>
+      </div>
     </header>
 <!-- Main -->
     <main class="main-catalog">
@@ -127,7 +130,7 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+              <a class="breadcrumbs-link" href="#">Каталог</a>
             </li>
             <li class="breadcrumbs-item">
               <p class="breadcrumbs-link">Сливочное</p>
@@ -152,7 +155,7 @@
 
             <fieldset class="catalog-filter-group filter-sorting-price">
               <legend class="catalog-filter-title">
-                Цена: <span>100</span> &#8381 - <span>500</span> &#8381
+                Цена: <span>100</span> &#8381; - <span>500</span> &#8381;
               </legend>
               <!-- Переработка, в JS можно динамично изменять минимальные и максимальные цифры, которые находяться в спанах
                  <label class="catalog-filter-label">
@@ -462,9 +465,9 @@
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="social-link-list footer-social-list">
           <li class="social-link-list-item vk-icon">
-            <a href="https://vk.com/htmlacademy">
+            <a class="icon-item" href="https://vk.com/htmlacademy">
               <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#fcfcfc"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#fcfcfc"></path>
               </svg>
               <span class="visually-hidden">
                 Вконтакте
@@ -472,9 +475,9 @@
             </a>
           </li>
           <li class="social-link-list-item fb-icon">
-            <a href="https://www.facebook.com/htmlacademy">
+            <a class="icon-item" href="https://www.facebook.com/htmlacademy">
               <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.57.9H13V18h-2.29v-5.1H9v-2.4h1.71V8.82c0-1.83 1.1-2.82 2.66-2.82.74 0 1.44.06 1.63.08V8.1h-.86C13 8.1 13 8.68 13 9.3v1.2h2l-.57 2.4Z" fill="#fcfcfc"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.57.9H13V18h-2.29v-5.1H9v-2.4h1.71V8.82c0-1.83 1.1-2.82 2.66-2.82.74 0 1.44.06 1.63.08V8.1h-.86C13 8.1 13 8.68 13 9.3v1.2h2l-.57 2.4Z" fill="#fcfcfc"></path>
               </svg>
               <span class="visually-hidden">
                 Фейсбук
@@ -482,9 +485,9 @@
             </a>
           </li>
           <li class="social-link-list-item ig-icon">
-            <a href="https://www.instagram.com/htmlacademy">
+            <a class="icon-item" href="https://www.instagram.com/htmlacademy">
               <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.53-5.96C13.83 6 13.63 6 12 6c-1.63 0-1.83 0-2.47.04-.64.03-1.08.13-1.46.28-.4.15-.76.38-1.06.69-.3.3-.54.66-.7 1.06-.14.38-.24.82-.27 1.46C6 10.17 6 10.37 6 12c0 1.63 0 1.83.04 2.47.03.64.13 1.08.28 1.46.15.4.38.76.69 1.06.3.3.66.54 1.06.7.38.14.82.24 1.46.27.64.03.84.04 2.47.04 1.63 0 1.83 0 2.47-.04a4.43 4.43 0 0 0 1.46-.28c.4-.15.76-.38 1.06-.69.3-.3.54-.66.7-1.06.14-.38.24-.82.27-1.46.03-.64.04-.84.04-2.47 0-1.63 0-1.83-.04-2.47a4.43 4.43 0 0 0-.28-1.46c-.15-.4-.38-.76-.69-1.06a2.93 2.93 0 0 0-1.06-.7 4.42 4.42 0 0 0-1.46-.27Zm-4.6 3.84a3 3 0 1 1 4.25 4.24 3 3 0 0 1-4.24-4.24Zm5.81-1.56a.75.75 0 1 1-1.06 1.06.75.75 0 0 1 1.06-1.06Zm-2.4 2.4a1.8 1.8 0 1 0-2.55 2.55 1.8 1.8 0 0 0 2.54-2.54Z" fill="#fcfcfc"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-9.53-5.96C13.83 6 13.63 6 12 6c-1.63 0-1.83 0-2.47.04-.64.03-1.08.13-1.46.28-.4.15-.76.38-1.06.69-.3.3-.54.66-.7 1.06-.14.38-.24.82-.27 1.46C6 10.17 6 10.37 6 12c0 1.63 0 1.83.04 2.47.03.64.13 1.08.28 1.46.15.4.38.76.69 1.06.3.3.66.54 1.06.7.38.14.82.24 1.46.27.64.03.84.04 2.47.04 1.63 0 1.83 0 2.47-.04a4.43 4.43 0 0 0 1.46-.28c.4-.15.76-.38 1.06-.69.3-.3.54-.66.7-1.06.14-.38.24-.82.27-1.46.03-.64.04-.84.04-2.47 0-1.63 0-1.83-.04-2.47a4.43 4.43 0 0 0-.28-1.46c-.15-.4-.38-.76-.69-1.06a2.93 2.93 0 0 0-1.06-.7 4.42 4.42 0 0 0-1.46-.27Zm-4.6 3.84a3 3 0 1 1 4.25 4.24 3 3 0 0 1-4.24-4.24Zm5.81-1.56a.75.75 0 1 1-1.06 1.06.75.75 0 0 1 1.06-1.06Zm-2.4 2.4a1.8 1.8 0 1 0-2.55 2.55 1.8 1.8 0 0 0 2.54-2.54Z" fill="#fcfcfc"></path>
               </svg>
               <span class="visually-hidden">
                 Инстаграм
