@@ -13,7 +13,7 @@
     <header class="page-header">
       <div class="page-header-container">
 <!-- Logo image -->
-        <a class="logo">
+        <a href="index.html" class="logo">
           <img src="img/icons/header-logo.svg" alt="Логотип магазина Glassy Shop">
         </a>
 <!-- Navigation links -->
@@ -153,23 +153,31 @@
               </select>
             </fieldset>
 
-            <fieldset class="catalog-filter-group filter-sorting-price">
-              <legend class="catalog-filter-title">
-                Цена: <span>100</span> &#8381; - <span>500</span> &#8381;
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title price-title">Цена:
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="100" name="min-price"> ₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px;"> ₽
+                  </label>
+                </div>
               </legend>
-              <!-- Переработка, в JS можно динамично изменять минимальные и максимальные цифры, которые находяться в спанах
-                 <label class="catalog-filter-label">
-                от <input class="catalog-filter-input" type="number" name="min-price" value="100"> &#8381;
-              </label>
-              <label class="catalog-filter-label">
-                до <input class="catalog-filter-input" type="number" name="max-price" value="500"> &#8381;
-              </label> -->
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 40px; width: 72px;">
+                    <button type="button" class="range-toggle toggle-min">
+                      <div class="range-bar-inside"></div>
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <div class="range-bar-inside"></div>
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="catalog-filter-group filter-sorting-fat">
