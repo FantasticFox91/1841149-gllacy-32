@@ -377,6 +377,9 @@
                 <label for="date" class="delivery-label">Дата</label>
                 <button class="info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  <div class="tooltip">
+                    <p class="tooltip-text">Введите дату предпологаемой доставки</p>
+                  </div>
                 </button>
                 <input type="text" id="date" placeholder="01.04.2020" name="delivery-date" class="form-input" required>
               </p>
@@ -390,6 +393,9 @@
                 <label for="delivery-adress" class="delivery-label">Адресс</label>
                   <button class="info" type="button">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                    <div class="tooltip">
+                      <p class="tooltip-text">Введите название <br> улицы, дома и квартиры</p>
+                    </div>
                   </button>
                   <input type="text" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" name="adress" class="form-input" required>
             </p>
@@ -418,7 +424,7 @@
             </dd>
             <dd class="adress-btn">
               <button type="button" class="container-btn-red">
-                <a href="#contact-us" class="btn-link"> Форма обратной связи </a>
+                Форма обратной связи
               </button>
             </dd>
           </dl>
@@ -496,7 +502,7 @@
       </div>
     </footer>
 <!-- Modal pop-up for feedback -->
-    <div class="modal-feedback-form" id="contact-us">
+    <div class="modal-feedback-form">
       <div class="modal-wrapper">
         <button type="button" class="close-modal">
           <a href="#adress" class="modal-link">
