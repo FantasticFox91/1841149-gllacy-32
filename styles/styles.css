@@ -1103,9 +1103,14 @@ body {
   content: "";
 }
 
+.cow-icon .about-item-text {
+  padding-left: 1px;
+  padding-right: 16px;
+}
+
 .cow-icon::before {
   position: absolute;
-  left: 0;
+  left: 1px;
   width: 48px;
   height: 48px;
   background: url("../img/icons/cow.svg") no-repeat 50% 50%;
