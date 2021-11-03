@@ -1762,6 +1762,8 @@ form .form-row:last-of-type {
 
 .range-bar {
   position: absolute;
+  left: 33px;
+  width: 68px;
   height: 2px;
   background-color: #565656;
 }
@@ -1837,7 +1839,7 @@ form .form-row:last-of-type {
 }
 
 .range-input {
-  width: 30px;
+  width: 37px;
   padding: 0 2px;
   font: inherit;
   text-align: center;
