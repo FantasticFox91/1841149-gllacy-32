@@ -877,6 +877,10 @@ body {
   background-color: rgb(255, 119, 153);
 }
 
+.gift-item:last-child .gift-info {
+  width: 302px;
+}
+
 .gift-container-item {
   padding: 41px 13px 37px 40px;
 }
