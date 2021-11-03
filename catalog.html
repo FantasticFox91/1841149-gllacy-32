@@ -12,11 +12,11 @@
 <!-- Header -->
     <header class="page-header">
       <div class="page-header-container">
-<!-- Logo image -->
+  <!-- Logo image -->
         <a href="index.html" class="logo">
           <img src="img/icons/header-logo.svg" alt="Логотип магазина Glassy Shop">
         </a>
-<!-- Navigation links -->
+  <!-- Navigation links -->
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="list-item nav-list-active">
@@ -30,7 +30,7 @@
             </li>
           </ul>
         </nav>
-<!-- User interaction buttons list -->
+  <!-- User interaction buttons list -->
         <ul class="nav-list user-list">
           <li class="list-item">
             <a href="tel:88005558628" class="item-tel">+7 800 555-86-28</a>
@@ -90,7 +90,7 @@
                 2 товара
               </span>
             </button>
-<!-- Bucket pop-up -->
+  <!-- Bucket pop-up -->
             <div class="catalog-bucket">
               <h2 class="bucket-heading">Корзина</h2>
               <ul class="bucket-list">
@@ -122,7 +122,7 @@
     </header>
 <!-- Main -->
     <main class="main-catalog">
-      <div class="content-container">
+      <div class="content-container catalog-container">
 <!-- Breadcrumbs navigation -->
         <header class="inner-site-navigation">
           <ul class="breadcrumbs">
@@ -136,12 +136,13 @@
               <p class="breadcrumbs-link">Сливочное</p>
             </li>
           </ul>
-          <h1>Сливочное мороженное</h1>
+          <h1 class="catalog-heading">Сливочное мороженое</h1>
         </header>
 <!-- Block with filters -->
         <section class="catalog-filter-block">
           <h2 class="visually-hidden">Список фильтров</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+  <!-- Select -->
             <fieldset class="catalog-filter-group filter-sorting">
               <legend class="catalog-filter-title">Сортировка:</legend>
               <select class="select-control" name="sorting" id="sorting">
@@ -152,7 +153,7 @@
                 <option value="fatdown" class="sort-option">по убыванию жирности</option>
               </select>
             </fieldset>
-
+  <!-- Range -->
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title price-title">Цена:
                 <div class="range-wrapper-inputs">
@@ -160,13 +161,13 @@
                     <input class="range-input" type="number" value="100" name="min-price"> ₽
                   </label>
                   <label class="catalog-filter-label">
-                    - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px;"> ₽
+                    – <input class="range-input" type="number" value="500" name="max-price" style="width: 37px;"> ₽
                   </label>
                 </div>
               </legend>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 40px; width: 72px;">
+                  <div class="range-bar" style="left: 33px; width: 68px;">
                     <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -178,7 +179,7 @@
                 </div>
               </div>
             </fieldset>
-
+  <!-- Fat checkboxes -->
             <fieldset class="catalog-filter-group filter-sorting-fat">
               <legend class="catalog-filter-title">Жирность:</legend>
               <ul class="catalog-filter-list">
@@ -198,48 +199,48 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="fat less 30%" disabled>
+                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="fat less 30%" >
                     <span class="control-label-radio"></span>
                     до 30%
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="fat more 30%" checked disabled>
+                    <input class="visually-hidden control-input-radio" type="radio" name="product-group" value="fat more 30%" >
                     <span class="control-label-radio"></span>
                     выше 30%
                   </label>
                 </li>
               </ul>
             </fieldset>
-
+  <!-- Adds checkboxes -->
             <fieldset class="catalog-filter-group filter-sorting-adds">
               <legend class="catalog-filter-title">Наполнители:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="chocolate" >
+                    <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
                     <span class="control-label"></span>
                     шоколадные
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item sugar-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="sugar-adds" checked>
                     <span class="control-label"></span>
-                    сахарные присыпки
+                    сахарные посыпки
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="fruits" disabled>
+                    <input class="visually-hidden control-input" type="checkbox" name="fruits">
                     <span class="control-label"></span>
                     фрукты
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="sirops" checked disabled>
+                    <input class="visually-hidden control-input" type="checkbox" name="sirops">
                     <span class="control-label"></span>
                     сиропы
                   </label>
@@ -253,7 +254,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <button class="form-btn" type="submit">Применить</button>
           </form>
         </section>
@@ -267,7 +267,7 @@
                 <h3 class="product-card-title">Малинка</h3>
               </a>
               <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
-              <strong class="product-card-price">310 &#8381;/кг</strong>
+              <strong class="product-card-price">310<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -281,7 +281,7 @@
                 <h3 class="product-card-title">Фисташка</h3>
               </a>
               <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
-              <strong class="product-card-price">340 &#8381;/кг</strong>
+              <strong class="product-card-price">340<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -294,8 +294,8 @@
                 <img class="product-card-image" src="img/blueberry.jpg" alt="Черника" width="168" height="168">
                 <h3 class="product-card-title">Черника</h3>
               </a>
-              <p class="product-card-text">Крем-брюле с черничным джемом</p>
-              <strong class="product-card-price">330 &#8381;/кг</strong>
+              <p class="product-card-text">Крем-брюле <br> с черничным джемом</p>
+              <strong class="product-card-price">330<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -308,8 +308,8 @@
                 <img class="product-card-image" src="img/bubble-gum.jpg" alt="Бабл-гам" width="168" height="168">
                 <h3 class="product-card-title">Бабл-гам</h3>
               </a>
-              <p class="product-card-text">Ванильный пломбир со сладкой посыпкой</p>
-              <strong class="product-card-price">320 &#8381;/кг</strong>
+              <p class="product-card-text">Ванильный пломбир <br> со сладкой посыпкой</p>
+              <strong class="product-card-price">320<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -323,7 +323,7 @@
                 <h3 class="product-card-title">Ежевика</h3>
               </a>
               <p class="product-card-text">Сливочное мороженое с ежевичным джемом</p>
-              <strong class="product-card-price">330 &#8381;/кг</strong>
+              <strong class="product-card-price">330<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -336,8 +336,8 @@
                 <img class="product-card-image" src="img/banana.jpg" alt="Банан" width="168" height="168">
                 <h3 class="product-card-title">Банан</h3>
               </a>
-              <p class="product-card-text">Сливочный пломбир с банановым вкусом</p>
-              <strong class="product-card-price">340 &#8381;/кг</strong>
+              <p class="product-card-text">Сливочный пломбир <br> с банановым вкусом</p>
+              <strong class="product-card-price">340<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -351,7 +351,7 @@
                 <h3 class="product-card-title">Шоколадка</h3>
               </a>
               <p class="product-card-text">Классический шоколадный пломбир</p>
-              <strong class="product-card-price">270 &#8381;/кг</strong>
+              <strong class="product-card-price">270<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -364,8 +364,8 @@
                 <img class="product-card-image" src="img/strawberry.jpg" alt="Клубничка" width="168" height="168">
                 <h3 class="product-card-title">Клубничка</h3>
               </a>
-              <p class="product-card-text">Сливочный пломбир с клубничным вкусом</p>
-              <strong class="product-card-price">300 &#8381;/кг</strong>
+              <p class="product-card-text">Сливочный пломбир <br> с клубничным вкусом</p>
+              <strong class="product-card-price">300<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -379,7 +379,7 @@
                 <h3 class="product-card-title">Лимон</h3>
               </a>
               <p class="product-card-text">Освежающий лимонный сорбет</p>
-              <strong class="product-card-price">310 &#8381;/кг</strong>
+              <strong class="product-card-price">310<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -392,8 +392,8 @@
                 <img class="product-card-image" src="img/mentol.jpg" alt="Ментол" width="168" height="168">
                 <h3 class="product-card-title">Ментол</h3>
               </a>
-              <p class="product-card-text">Сливочный пломбир с ментоловым сиропом</p>
-              <strong class="product-card-price">320 &#8381;/кг</strong>
+              <p class="product-card-text">Сливочный пломбир <br>с ментоловым сиропом</p>
+              <strong class="product-card-price">320<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -407,7 +407,7 @@
                 <h3 class="product-card-title">Орешек</h3>
               </a>
               <p class="product-card-text">Фисташковый пломбир с шоколадным сиропом</p>
-              <strong class="product-card-price">360 &#8381;/кг</strong>
+              <strong class="product-card-price">360<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
@@ -420,8 +420,8 @@
                 <img class="product-card-image" src="img/creme-brulee.jpg" alt="Крем-брюле" width="168" height="168">
                 <h3 class="product-card-title">Крем-брюле</h3>
               </a>
-              <p class="product-card-text">Классическое крем-брюле</p>
-              <strong class="product-card-price">280 &#8381;/кг</strong>
+              <p class="product-card-text">Классическое <br> крем-брюле</p>
+              <strong class="product-card-price">280<span class="price-currency"> &#8381;/кг</span></strong>
               <button type="button" class="product-card-btn">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
