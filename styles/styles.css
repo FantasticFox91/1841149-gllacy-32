@@ -739,11 +739,11 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider-control:hover {
   background-color: #fcfcfc;
-  cursor: pointer;
 }
 
 .slider-control:focus {
@@ -882,7 +882,7 @@ body {
 }
 
 .gift-container-item {
-  padding: 41px 13px 37px 40px;
+  padding: 41px 14px 37px 40px;
 }
 
 .gift-container-item .link-btn {
@@ -891,7 +891,7 @@ body {
 }
 
 .gift-item:last-child .gift-image {
-  margin-left: -42px;
+  margin-left: -25px;
 }
 
 .main-gift-heading {
@@ -1619,10 +1619,6 @@ form .form-row:last-of-type {
   color: rgb(45, 52, 64);
 }
 
-.html-academy-link {
-
-}
-
 .html-academy-link a {
   color: inherit;
   text-decoration: none;
@@ -1839,12 +1835,13 @@ form .form-row:last-of-type {
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
-  margin-left: 1px;
+  margin-left: -29px;
+  margin-bottom: 7px;
+  font-size: 14px;
 }
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 5px;
 }
 
 .range-input {
