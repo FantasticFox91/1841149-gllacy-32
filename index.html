@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="img/favicons/favicon.ico">
+    <link rel="icon" href="favicon.ico"> <!-- 32 Х 32 -->
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
   </head>
   <body>
@@ -375,11 +375,11 @@
               <p class="delivery-text form-heading">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
               <p class="delivery-text">
                 <label for="date" class="delivery-label">Дата</label>
-                <button class="info" type="button">
+                <button class="info" >
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  <div class="tooltip">
+                  <span class="tooltip">
                     <p class="tooltip-text">Введите дату предпологаемой доставки</p>
-                  </div>
+                  </span>
                 </button>
                 <input type="text" id="date" placeholder="01.04.2020" name="delivery-date" class="form-input" required>
               </p>
@@ -389,11 +389,11 @@
                 </p>
               <p class="delivery-text delivery-adress">
                 <label for="delivery-adress" class="delivery-label">Адрес</label>
-                  <button class="info" type="button">
+                  <button class="info" >
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                    <div class="tooltip">
+                    <span class="tooltip">
                       <p class="tooltip-text">Введите название <br> улицы, дома и квартиры</p>
-                    </div>
+                    </span>
                   </button>
                   <input type="text" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" name="adress" class="form-input" required>
             </p>
