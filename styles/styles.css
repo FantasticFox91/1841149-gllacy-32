@@ -218,6 +218,7 @@ body {
 
 .user-list .list-item {
   margin-right: 16px;
+  padding-bottom: 10px;
 }
 
 .user-list .list-item:last-child {
