@@ -8,76 +8,93 @@
     <link rel="icon" href="favicon.ico"> <!-- 32 Х 32 -->
     <link rel="apple-touch-icon" href="img/favicons/apple.svg"> <!-- 180 Х 180 -->
   </head>
-  <body>
+  <body class="body-color-slide-1">
 <!-- Header -->
     <header class="page-header">
       <div class="page-header-container">
   <!-- Logo image -->
-        <a href="index.html" class="logo">
+        <a class="logo" href="index.html">
           <img src="img/icons/header-logo.svg" alt="Логотип магазина Glassy Shop" width="137" height="56">
         </a>
   <!-- Navigation links -->
         <nav class="main-nav">
           <ul class="nav-list">
-            <li class="list-item nav-list-active">
-              <a href="catalog.html" class="link-active">Каталог</a>
+            <li class="list-item catalog-list-item">
+              <a class="item-link link-active" href="catalog.html">Каталог</a>
+              <ul class="catalog-list">
+                <li class="catalog-item-heading catalog-item">
+                  <a class="catalog-link" href="#">Новинки</a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="catalog-item">
+                  <a class="catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
             </li>
             <li class="list-item">
-              <a href="#" class="item-link">Доставка и оплата</a>
+              <a class="item-link" href="#">Доставка и оплата</a>
             </li>
             <li class="list-item">
-              <a href="#" class="item-link">О компании</a>
+              <a class="item-link" href="#">О компании</a>
             </li>
           </ul>
         </nav>
   <!-- User interaction buttons list -->
         <ul class="nav-list user-list">
           <li class="list-item">
-            <a href="tel:88005558628" class="item-tel">+7 800 555-86-28</a>
+            <a class="item-tel" href="tel:88005558628">+7 800 555-86-28</a>
           </li>
           <li class="list-item search-pop">
-            <button type="button" class="user-list-btn">
+            <button class="user-list-btn" type="button">
               <span class="visually-hidden">
                 Поиск
               </span>
             </button>
   <!-- Search pop-up -->
             <div class="popup-search" id="search">
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="popup-search">
-                  <input type="search" class="form-input search-input" id="popup-search" name="header-search" placeholder="Поиск по сайту">
+                  <input class="form-input search-input" type="search" id="popup-search" name="header-search" placeholder="Поиск по сайту">
                 </label>
               </form>
             </div>
           </li>
           <li class="list-item login-pop">
-            <button type="button" class="user-list-btn enter">
+            <button class="user-list-btn enter" type="button">
               <span>
                 Вход
               </span>
             </button>
   <!-- Log-in form pop-up -->
             <div class="popup-dashboard-login">
-              <form action="https://echo.htmlacademy.ru" method="POST">
+              <form action="https://echo.htmlacademy.ru" method="post">
                 <p class="dashboard-login-heading">Личный кабинет</p>
                 <p class="dashboard-login-input">
                   <label for="dashboard-login-email">
-                    <input type="email" class="login-form" name="user-email" id="dashboard-login-email" placeholder="email@example.com" required>
+                    <input class="login-form" type="email" name="user-email" id="dashboard-login-email" placeholder="email@example.com" required>
                   </label>
                 </p>
                 <p class="dashboard-login-input">
                   <label for="dashboard-login-password">
-                    <input type="password" class="login-form" name="user-password" id="dashboard-login-password" placeholder="&#8901;&#8901;&#8901;&#8901;&#8901;" required>
+                    <input class="login-form" type="password" name="user-password" id="dashboard-login-password" placeholder="&#8901;&#8901;&#8901;&#8901;&#8901;" required>
                   </label>
                 </p>
                 <div class="login-columns">
-                  <button type="submit" class="container-btn-red">Войти</button>
+                  <button class="container-btn-red" type="submit">Войти</button>
                   <ul class="dashboard-login-list">
                     <li class="login-list-item">
-                      <a href="#" class="login-link">Забыли пароль?</a>
+                      <a class="login-link" href="#">Забыли пароль?</a>
                     </li>
                     <li class="login-list-item">
-                      <a href="#" class="login-link">Регистрация</a>
+                      <a class="login-link" href="#">Регистрация</a>
                     </li>
                   </ul>
                 </div>
@@ -85,7 +102,7 @@
             </div>
           </li>
           <li class="list-item cart">
-            <button type="button" class="user-list-btn catalog-cart-btn">
+            <button class="user-list-btn catalog-cart-btn" type="button">
               <span>
                 2 товара
               </span>
@@ -95,26 +112,26 @@
               <h2 class="bucket-heading">Корзина</h2>
               <ul class="bucket-list">
                 <li class="bucket-item">
-                  <img src="img/rasberry.jpg" alt="Малинка" class="bucket-image" width="46" height="46">
+                  <img class="bucket-image" src="img/rasberry.jpg" alt="Малинка" width="46" height="46">
                   <h3 class="bucket-item-heading">Малинка</h3>
                   <p class="price-calc">1 кг х 310 &#8381;</p>
                   <strong class="price">310 &#8381;</strong>
-                  <button type="button" class="bucket-cross">
+                  <button class="bucket-cross" type="button">
                     <span class="visually-hidden">Закрыть</span>
                   </button>
                 </li>
                 <li class="bucket-item">
-                  <img src="img/bubble-gum.jpg" alt="Бабл-гам" class="bucket-image" width="46" height="46">
+                  <img class="bucket-image" src="img/bubble-gum.jpg" alt="Бабл-гам" width="46" height="46">
                   <h3 class="bucket-item-heading">Бабл-гам</h3>
                   <p class="price-calc">1.5 кг х 320 &#8381;</p>
                   <strong class="price">480 &#8381;</strong>
-                  <button type="button" class="bucket-cross">
+                  <button class="bucket-cross" type="button">
                     <span class="visually-hidden">Закрыть</span>
                   </button>
                 </li>
               </ul>
-                <a class="container-btn-red link-bucket">Оформить заказ</a>
-                <p class="total-price"><b>Итого: <span>790</span>&#8381;</b></p>
+                <a class="container-btn-red link-bucket" href="#">Оформить заказ</a>
+                <p class="total-price">Итого: <span>790</span> &#8381;</p>
               </div>
           </li>
         </ul>
@@ -146,34 +163,31 @@
             <fieldset class="catalog-filter-group filter-sorting">
               <legend class="catalog-filter-title">Сортировка:</legend>
               <select class="select-control" name="sorting" id="sorting">
-                <option value="popular" class="sort-option">по популярности</option>
-                <option value="pricedown" class="sort-option">по убыванию цены</option>
-                <option value="priceup" class="sort-option">по возрастанию цены</option>
-                <option value="fatup" class="sort-option">по возрастанию жирности</option>
-                <option value="fatdown" class="sort-option">по убыванию жирности</option>
+                <option class="sort-option" value="popular">по популярности</option>
+                <option class="sort-option" value="pricedown">по убыванию цены</option>
+                <option class="sort-option" value="priceup">по возрастанию цены</option>
+                <option class="sort-option" value="fatup">по возрастанию жирности</option>
+                <option class="sort-option" value="fatdown">по убыванию жирности</option>
               </select>
             </fieldset>
   <!-- Range -->
             <fieldset class="catalog-filter-group">
-
-                <div class="range-wrapper-inputs">
-                  Цена:
-                  <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="100" name="min-price"> ₽
-                  </label>
-                  <label class="catalog-filter-label">
-                    – <input class="range-input" type="number" value="500" name="max-price"> ₽
-                  </label>
-                </div>
-
+              <div class="range-wrapper-inputs">
+                Цена:
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="100" name="min-price"> ₽
+                </label>
+                <label class="catalog-filter-label">
+                  – <input class="range-input" type="number" value="500" name="max-price"> ₽
+                </label>
+              </div>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button type="button" class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button type="button" class="range-toggle toggle-max">
-
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -254,8 +268,8 @@
                   </label>
                 </li>
               </ul>
+              <button class="form-btn" type="submit">Применить</button>
             </fieldset>
-            <button class="form-btn" type="submit">Применить</button>
           </form>
         </section>
 <!-- Items catalog -->
@@ -269,7 +283,7 @@
               </a>
               <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
               <strong class="product-card-price">310<span class="price-currency"> &#8381;/кг</span></strong>
-              <button type="button" class="product-card-btn">
+              <button class="product-card-btn" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
                 </svg>
@@ -283,7 +297,7 @@
               </a>
               <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
               <strong class="product-card-price">340<span class="price-currency"> &#8381;/кг</span></strong>
-              <button type="button" class="product-card-btn">
+              <button class="product-card-btn" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
                 </svg>
@@ -297,7 +311,7 @@
               </a>
               <p class="product-card-text">Крем-брюле <br> с черничным джемом</p>
               <strong class="product-card-price">330<span class="price-currency"> &#8381;/кг</span></strong>
-              <button type="button" class="product-card-btn">
+              <button class="product-card-btn" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
                 </svg>
@@ -311,7 +325,7 @@
               </a>
               <p class="product-card-text">Ванильный пломбир <br> со сладкой посыпкой</p>
               <strong class="product-card-price">320<span class="price-currency"> &#8381;/кг</span></strong>
-              <button type="button" class="product-card-btn">
+              <button class="product-card-btn" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
                 </svg>
@@ -436,7 +450,7 @@
             <button class="pagination-show-more link-btn" type="button">Показать ещё</button>
             <ol class="pagination-link-list link-list">
               <li class="pagination-item">
-                <a class="pagination-link pagination-prev" href="#">
+                <a class="pagination-link pagination-prev pagination-disabled" href="#">
                   <span class="visually-hidden">Предыдущая страница</span>
                 </a>
               </li>
@@ -507,18 +521,18 @@
         <h3 class="visually-hidden">О компании</h3>
         <ul class="about-manufacture-link-list link-list">
           <li class="list-item about-manufacure-list-item heart-icon">
-            <a href="#" class="footer-item-link">Для поставщиков</a>
+            <a class="footer-item-link" href="#">Для поставщиков</a>
           </li>
           <li class="list-item about-manufacure-list-item">
-            <a href="#" class="footer-item-link">О производстве</a>
+            <a class="footer-item-link" href="#">О производстве</a>
           </li>
           </ul>
           <ul class="regulations-list link-list">
             <li class="regulation-list-item list-item">
-              <a href="#" class="footer-item-link">Наши документы</a>
+              <a class="footer-item-link" href="#">Наши документы</a>
             </li>
             <li class="regulation-list-item list-item">
-              <a href="#" class="footer-item-link">Экологические стандарты</a>
+              <a class="footer-item-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
     <!--Dooter developer links -->
