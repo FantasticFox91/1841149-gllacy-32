@@ -194,6 +194,10 @@ body {
   list-style-type: none;
 }
 
+.nav-list .list-item {
+  padding-bottom: 10px;
+}
+
 .logo {
   width: 140px;
   margin-right: 14px;
@@ -207,7 +211,6 @@ body {
 .list-item {
   line-height: 20px;
   padding: 0;
-
 }
 
 .user-list {
