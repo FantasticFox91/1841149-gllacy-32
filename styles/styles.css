@@ -214,7 +214,7 @@ body {
 }
 
 .user-list {
-  max-width: 445px;
+  max-width: 470px;
   margin-top: 5px;
   margin-left: auto;
 }
@@ -410,6 +410,11 @@ body {
   padding: 0;
   cursor: pointer;
   background: url("../img/icons/cross.svg") 50% 50% no-repeat;
+  opacity: 0.5;
+}
+
+.search-input::-webkit-search-cancel-button:hover {
+  opacity: 1;
 }
 
 .search-form {
@@ -958,6 +963,8 @@ body {
 }
 
 .gift-container-item {
+  display: flex;
+  flex-direction: column;
   padding: 41px 14px 40px 40px;
 }
 
@@ -987,6 +994,11 @@ body {
 
 .gift-image {
   align-self: end;
+}
+
+.gift-container-item .link-btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 /* Popular block grid*/
@@ -1028,6 +1040,7 @@ body {
   margin-top: -51px;
   margin-bottom: 11px;
   border-radius: 50%;
+  object-fit: cover;
   filter: drop-shadow(0 4px 12px rgba(45, 52, 64, 0.1));
 }
 
@@ -1326,6 +1339,7 @@ body {
 .delivery-desc {
   width: 371px;
   margin-left: 100px;
+  margin-bottom: 63px;
   padding-top: 168px;
 }
 
@@ -1453,7 +1467,7 @@ body {
 .adress {
   display: flex;
   background: #fcfcfc url("../img/adress-bg.jpg") no-repeat;
-  background-size: 1170px 492px;
+  background-size: cover;
 }
 
 .adress-block {
