@@ -33,7 +33,7 @@
                   <a class="catalog-link" href="#">Щербеты</a>
                 </li>
                 <li class="catalog-item">
-                  <a href="#" class="catalog-link">Фруктовый лед</a>
+                  <a class="catalog-link" href="#">Фруктовый лед</a>
                 </li>
                 <li class="catalog-item">
                   <a class="catalog-link" href="#">Мелорин</a>
@@ -80,11 +80,13 @@
                 <p class="dashboard-login-heading">Личный кабинет</p>
                 <p class="dashboard-login-input">
                   <label for="dashboard-login-email">
+                    <!-- Для показа ошибки валидации задать класс error -->
                     <input class="form-input login-form" type="email" name="user-email" id="dashboard-login-email" placeholder="email@example.com" required>
                   </label>
                 </p>
                 <p class="dashboard-login-input">
                   <label for="dashboard-login-password">
+                    <!-- Для показа ошибки валидации задать класс error -->
                     <input class="form-input login-form" type="password" name="user-password" id="dashboard-login-password" placeholder="&#8901;&#8901;&#8901;&#8901;&#8901;" required>
                   </label>
                 </p>
@@ -155,21 +157,19 @@
                 <img class="promo-slide-image" src="img/ice-cream-3.png" alt="Карамельный пломбир с маршмеллоу" width="90" height="150">
               </div>
             </li>
-            <li>
-              <button class="slider-control control-prev" type="button">
-                <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="arrow-black" fill-rule="evenodd" clip-rule="evenodd" d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" fill="#fcfcfc"/>
-                </svg>
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button class="slider-control control-next" type="button">
-                <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="arrow-black" fill-rule="evenodd" clip-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" fill="#fcfcfc"/>
-                </svg>
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
-            </li>
           </ul>
+          <button class="slider-control control-prev" type="button">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="arrow-black" fill-rule="evenodd" clip-rule="evenodd" d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" fill="#fcfcfc"/>
+            </svg>
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="slider-control control-next" type="button">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="arrow-black" fill-rule="evenodd" clip-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" fill="#fcfcfc"/>
+            </svg>
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
   <!-- Dots pagination -->
           <div class="pagination-columns">
             <ol class="slider-pagination">
@@ -291,7 +291,7 @@
               </a>
               <p class="product-card-text">Крем-брюле <br> с черничным джемом</p>
               <strong class="product-card-price">330 <span class="price-currency">₽/кг</span></strong>
-              <button  class="product-card-btn" type="button">
+              <button class="product-card-btn" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="cart-black" fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#fcfcfc"/>
                 </svg>
@@ -355,6 +355,7 @@
                 </p>
                 <p class="form-combo">
                   <label for="email">
+                    <!-- Для показа ошибки валидации задать класс error -->
                     <input class="form-input" type="email" placeholder="email@example.com" name="email" id="email" required>
                   </label>
                   <button class="container-btn-red" type="submit">Отправить</button>
@@ -381,10 +382,12 @@
                     <span class="tooltip-text">Введите дату предпологаемой доставки</span>
                   </span>
                 </button>
+                <!-- Для показа ошибки валидации задать класс error -->
                 <input class="form-input" type="text" id="date" placeholder="01.04.2020" name="delivery-date" required>
               </p>
               <p class="delivery-text">
                 <label class="delivery-label" for="phone-number">Телефон</label>
+                <!-- Для показа ошибки валидации задать класс error -->
                 <input class="form-input" type="tel" id="phone-number" placeholder="+7 800 999-00-00" name="phone-number" required>
                 </p>
               <p class="delivery-text delivery-adress">
@@ -395,6 +398,7 @@
                       <span class="tooltip-text">Введите название <br> улицы, дома и квартиры</span>
                     </span>
                   </button>
+                  <!-- Для показа ошибки валидации задать класс error -->
                   <input class="form-input" type="text" id="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" name="adress" required>
               </p>
               <p class="delivery-text delivery-form-btn">
@@ -499,7 +503,7 @@
       </div>
     </footer>
 <!-- Modal pop-up for feedback, для открытия нужно прописать клас modal-open -->
-    <div class="modal-feedback-form">
+    <div class="modal-feedback-form modal-open">
       <div class="modal-wrapper">
         <button class="close-modal" type="button">
           <span class="visually-hidden">
@@ -511,17 +515,19 @@
           <p class="feedback-form-heading">Мы обязательно ответим вам!</p>
           <p class="form-row">
             <label for="name">
+              <!-- Для показа ошибки валидации задать класс error -->
               <input class="form-input" type="text" id="name" placeholder="Имя и фамилия" name="feedback-full-name" required>
             </label>
           </p>
           <p class="form-row">
             <label for="feedback-email">
+              <!-- Для показа ошибки валидации задать класс error -->
               <input class="form-input" type="email" id="feedback-email" placeholder="email@example.com" name="feedback-email" required>
             </label>
           </p>
           <p class="form-row">
             <label for="form-text">
-              <textarea class="form-input" id="form-text" placeholder="В свободной форме" name="feedback-text" rows="6" required></textarea>
+              <textarea class="form-input form-textarea" id="form-text" placeholder="В свободной форме" name="feedback-text" rows="6" required></textarea>
             </label>
           </p>
           <button class="container-btn-red feedback-btn" type="submit">Отправить</button>
