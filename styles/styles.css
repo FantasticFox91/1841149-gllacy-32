@@ -402,19 +402,29 @@ body {
   width: 100%;
 }
 
-.search-input::-webkit-search-cancel-button {
-  appearance: none;
-  height: 10px;
+.search-input + .close-icon {
+  position: absolute;
+  top: 43px;
+  right: 32px;
+  display: none;
   width: 10px;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
+  height: 10px;
+  border: none;
   background: url("../img/icons/cross.svg") 50% 50% no-repeat;
   opacity: 0.5;
+  cursor: pointer;
 }
 
-.search-input::-webkit-search-cancel-button:hover {
+.search-input:valid + .close-icon {
+  display: inline-block;
+}
+
+.close-icon:hover {
   opacity: 1;
+}
+
+.search-input::-webkit-search-cancel-button {
+  appearance: none;
 }
 
 .search-form {
